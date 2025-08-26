@@ -210,6 +210,8 @@ class MultiModalDummyInputsBuilder(
         processor = self.info.get_hf_processor()
         if "gemma3" in processor.__class__.__name__.lower():
             image_token = processor.boi_token
+        elif "omega3" in processor.__class__.__name__.lower():
+            image_token = processor.boi_token
         else:
             image_token = getattr(processor, "image_token", "")
         return image_token * num_images
