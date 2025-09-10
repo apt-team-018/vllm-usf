@@ -113,7 +113,7 @@ _RUNNER_CONVERTS: dict[RunnerType, list[ConvertType]] = {
     "draft": [],
 }
 
-# Some model suffixes are based on auto classes from Transformers:
+# Some model suffixes are based on auto classes from transformers:
 # https://huggingface.co/docs/transformers/en/model_doc/auto
 # NOTE: Items higher on this list priority over lower ones
 _SUFFIX_TO_DEFAULTS: list[tuple[str, tuple[RunnerType, ConvertType]]] = [

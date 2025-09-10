@@ -727,7 +727,7 @@ Some models are supported only via the [Transformers backend](#transformers). Th
         # Core vLLM-compatible dependencies with Molmo accuracy setup (tested on L40)
         torch==2.5.1
         torchvision==0.20.1
-        transformers==4.48.1
+        transformers-usf
         tokenizers==0.21.0
         tiktoken==0.7.0
         vllm==0.7.0
